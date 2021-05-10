@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        function createButton(contenu) {
-            const btnEl = document.createElement('button');
-            btnEl.innerText = contenu;
+      function createButton(contenu) {
+        const btnEl = document.createElement('button');
+        btnEl.innerText = contenu;
 
-            btnEl.addEventListener('click', () => {
-                console.log(contenu);
-            });
+        btnEl.addEventListener('click', () => {
+          console.log(contenu);
+        });
 
-            document.body.appendChild(btnEl);
-        }
+        document.body.appendChild(btnEl);
+      }
 
-        createButton('Button 1');
-        createButton('Button 2');
-        createButton('Button 3');
-
+      createButton('Button 1');
+      createButton('Button 2');
+      createButton('Button 3');
     </script>
-</body>
+  </body>
 </html>

@@ -1,7 +1,7 @@
-for (var i=0; i<3; i++) {
-    setTimeout(function() {
-        console.log(i);
-    }, 1000);
+for (var i = 0; i < 3; i++) {
+  setTimeout(function () {
+    console.log(i);
+  }, 1000);
 }
 
 // A : ..1s.. 1 2 3
@@ -17,22 +17,22 @@ for (var i=0; i<3; i++) {
 //                                            3      3      3
 
 function externe(msg) {
-    return function() {
-        console.log(msg);
-    }
+  return function () {
+    console.log(msg);
+  };
 }
 
-for (var i=0; i<3; i++) {
-    setTimeout(externe(i), 1000);
+for (var i = 0; i < 3; i++) {
+  setTimeout(externe(i), 1000);
 }
 
 // ..1s.. 0 1 2
 
-for (let i=0; i<3; i++) {
-    // portée de block / closure
-    setTimeout(function() {
-        console.log(i);
-    }, 1000);
+for (let i = 0; i < 3; i++) {
+  // portée de block / closure
+  setTimeout(function () {
+    console.log(i);
+  }, 1000);
 }
 
 // ..1s.. 0 1 2

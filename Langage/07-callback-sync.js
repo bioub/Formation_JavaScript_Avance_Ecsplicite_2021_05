@@ -11,25 +11,26 @@ const prenoms = ['Romain', 'Anthony', 'Nathan', 'Julien'];
 
 // Programmation impérative (ES3)
 var prenoms6lettresEnMaj1 = [];
-for (var i=0; i<prenoms.length; i++) {
-    var prenom = prenoms[i];
+for (var i = 0; i < prenoms.length; i++) {
+  var prenom = prenoms[i];
 
-    if (prenom.length === 6) {
-        var prenom6lettres = prenom;
-        var prenom6lettresEnMaj = prenom6lettres.toUpperCase();
+  if (prenom.length === 6) {
+    var prenom6lettres = prenom;
+    var prenom6lettresEnMaj = prenom6lettres.toUpperCase();
 
-        prenoms6lettresEnMaj1.push(prenom6lettresEnMaj);
-    }
+    prenoms6lettresEnMaj1.push(prenom6lettresEnMaj);
+  }
 }
 
-for (var i=0; i<prenoms6lettresEnMaj1.length; i++) {
-    console.log(prenoms6lettresEnMaj1[i]);
+for (var i = 0; i < prenoms6lettresEnMaj1.length; i++) {
+  console.log(prenoms6lettresEnMaj1[i]);
 }
 
 // Programmation fonctionnelle (à partir de ES5)
 // forEach, map, filter, reduce, reduceRight, find, findIndex...
-const prenoms6lettresEnMaj2 = prenoms.filter((prenom) => prenom.length === 6)
-       .map((prenom6lettres) => prenom6lettres.toUpperCase());
+const prenoms6lettresEnMaj2 = prenoms
+  .filter((prenom) => prenom.length === 6)
+  .map((prenom6lettres) => prenom6lettres.toUpperCase());
 
 prenoms6lettresEnMaj2.forEach((p) => console.log(p));
 

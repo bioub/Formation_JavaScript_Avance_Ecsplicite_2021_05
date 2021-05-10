@@ -4,15 +4,15 @@ globalThis.globalScope = 'globalScope';
 const moduleScope = 'moduleScope';
 
 function externe() {
-    const closureScope = 'closureScope';
-    function interne() {
-        const localScope = 'localScope';
-        console.log(localScope);
-        console.log(closureScope);
-        console.log(moduleScope);
-        console.log(globalScope);
-    }
-    interne();
+  const closureScope = 'closureScope';
+  function interne() {
+    const localScope = 'localScope';
+    console.log(localScope);
+    console.log(closureScope);
+    console.log(moduleScope);
+    console.log(globalScope);
+  }
+  interne();
 }
 
 externe();
