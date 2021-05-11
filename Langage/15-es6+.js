@@ -93,3 +93,16 @@ class Contact {
 
 console.log(typeof Contact); // function
 console.log(typeof Contact.prototype.hello); // function
+
+// SPREAD Object
+// Conversion syntaxique : object -> liste de clés/valeurs
+// ici : {x: 1, y: 2} -> x: 1, y: 2
+const coords3d = { ...coords, z: 4};
+
+// REST Object
+// Conversion syntaxique : liste de clés/valeurs -> object
+const {z, ...coords2d} = coords3d;
+console.log(coords2d.x); // 1
+console.log(coords2d.y); // 2
+
+// 

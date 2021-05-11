@@ -147,3 +147,8 @@ for (const key of Object.keys(renault)) {
   const value = renault[key];
   console.log(key, value);
 }
+
+// le plus moderne pour boucler
+for (const [key, value] of Object.entries(renault)) {
+  console.log(key, value);
+}
