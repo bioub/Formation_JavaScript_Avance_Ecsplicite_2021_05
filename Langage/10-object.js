@@ -83,7 +83,6 @@ console.log(typeof romain); // object
 console.log(romain.name); // Romain
 console.log(romain.hello === julien.hello); // true (1 fonction en mémoire)
 
-
 // fonctionnement du prototype
 // . ou [] vont faire des recherches multiples
 // 1 - d'abord dans l'objet
@@ -97,7 +96,6 @@ console.log(romain.hasOwnProperty('name')); // true
 // 5 - si présent nul => undefined
 console.log(romain.toto); // undefined
 
-
 // Boucler sur les clés d'un objet
 
 for (const key in coordsA) {
@@ -109,8 +107,43 @@ for (const key in coordsA) {
 // si prototype
 for (const key in romain) {
   console.log(key); // name puis hello
-  if (romain.hasOwnProperty(key)) { // seulement les propriétés
+  if (romain.hasOwnProperty(key)) {
+    // seulement les propriétés
     const value = romain[key];
     console.log(value);
   }
+}
+
+// Objet Avancé
+
+function Voiture(marque) {
+  this.marque = marque;
+}
+
+// Voiture.prototype.demarrer = function() {
+//   return 'Vrrroommmm';
+// };
+
+Object.defineProperty(Voiture.prototype, 'demarrer', {
+  value: function () {
+    return 'Vrrroommmm';
+  },
+  // writable: false,
+  // configurable: false,
+  // enumerable: false, // pas dans les boucles, dans JSON.stringify...
+});
+
+const renault = new Voiture('Renault');
+renault.demarrer();
+
+for (const key in renault) {
+  const value = renault[key];
+  console.log(key, value);
+}
+
+// plus performant que for .. in
+// et pas besoin du test if (obj.hasOwnProperty(key)) {
+for (const key of Object.keys(renault)) {
+  const value = renault[key];
+  console.log(key, value);
 }

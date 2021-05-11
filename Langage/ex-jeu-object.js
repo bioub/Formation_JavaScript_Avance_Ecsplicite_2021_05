@@ -26,6 +26,7 @@ function Jeu(options) {
   options = options || {};
   const min = options.min || 0; // possible parce que 0 (la valeur par défaut) est falsy
   const max = options.max !== undefined ? options.max : 100;
+  // Object.assign(this, {min: 0, max: 100}, options);
 
   this.rl = readline.createInterface({
     input: process.stdin,
