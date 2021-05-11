@@ -38,3 +38,6 @@ console.log(objA.nb); // 1
 
 console.log(objA === objB); // false (2 références distinctes)
 console.log(objA.sub === objB.sub); // false (2 objets sub)
+
+const array1 = [1, 2, 3];
+const array2 = array1.slice(); // copy
