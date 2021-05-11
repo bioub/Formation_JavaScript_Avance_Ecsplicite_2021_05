@@ -2,7 +2,7 @@
 //     // pause de delayMs
 //     const debut = Date.now();
 
-//     // bloquer le thread
+//     // bloquer le thread => ABSURDE
 //     while (debut + delayMs > Date.now());
 
 //     cb();
@@ -18,7 +18,7 @@ function pause(delayMs) {
   // pause de delayMs
   const debut = Date.now();
 
-  // bloquer le thread
+  // bloquer le thread => ABSURDE
   while (debut + delayMs > Date.now());
 }
 

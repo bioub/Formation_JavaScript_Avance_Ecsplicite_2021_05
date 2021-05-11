@@ -34,10 +34,12 @@ const prenoms6lettresEnMaj2 = prenoms
 
 prenoms6lettresEnMaj2.forEach((p) => console.log(p));
 
+console.log('FIN');
+
 // pile d'appel
 // ^
 // |                    up   up   up   lg   lg   lg
 // |=> - => - => - =>   => - => - =>   => - => - =>
-// |filter            - map          - forEach
+// |filter            - map          - forEach      - lg
 // +-----------------------------------------------------> temps
-//                                     ROM  NAT  JULIEN
+//                                     ROM  NAT  JUL  FIN

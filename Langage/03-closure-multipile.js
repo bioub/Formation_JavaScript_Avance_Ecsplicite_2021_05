@@ -1,9 +1,9 @@
 function externe(msg) {
-    function interne() {
-        console.log(msg);
-    }
+  function interne() {
+    console.log(msg);
+  }
 
-    return interne;
+  return interne;
 }
 
 const interneFromExterne = externe('Hello');

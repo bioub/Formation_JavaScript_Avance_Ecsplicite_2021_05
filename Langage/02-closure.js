@@ -1,6 +1,6 @@
 globalThis.globalScope = 'globalScope';
 
-// Dans Node.js
+// Dans Node.js ou dans le browser avec type="module"
 const moduleScope = 'moduleScope';
 
 function externe() {

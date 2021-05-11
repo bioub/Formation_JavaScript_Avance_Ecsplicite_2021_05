@@ -82,3 +82,35 @@ const julien = new Contact('Julien');
 console.log(typeof romain); // object
 console.log(romain.name); // Romain
 console.log(romain.hello === julien.hello); // true (1 fonction en mémoire)
+
+
+// fonctionnement du prototype
+// . ou [] vont faire des recherches multiples
+// 1 - d'abord dans l'objet
+console.log(romain.name); // Romain
+// 2 - dans le prototype de la fonction constructeur
+console.log(romain.hello()); // Hello my name is Romain
+// 3 - dans les prototypes chainés (simulation héritage)
+// voir plus tard en ES6
+// 4 - dans le prototype de Object (tous les objets héritent de Object)
+console.log(romain.hasOwnProperty('name')); // true
+// 5 - si présent nul => undefined
+console.log(romain.toto); // undefined
+
+
+// Boucler sur les clés d'un objet
+
+for (const key in coordsA) {
+  console.log(key); // x puis y
+  const value = coordsA[key];
+  console.log(value);
+}
+
+// si prototype
+for (const key in romain) {
+  console.log(key); // name puis hello
+  if (romain.hasOwnProperty(key)) { // seulement les propriétés
+    const value = romain[key];
+    console.log(value);
+  }
+}
