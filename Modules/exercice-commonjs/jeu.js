@@ -1,4 +1,5 @@
 const readline = require('readline');
+const { Random } = require('./random');
 
 class Jeu {
   constructor(options = {}) {
@@ -14,7 +15,10 @@ class Jeu {
     this.essais = [];
   }
   jouer() {
-    console.log(`Vous avez déjà joué : ${this.essais.join(' - ')}...`);
+    if (this.essais.length) {
+      console.log(`Vous avez déjà joué : ${this.essais.join(' - ')}...`);
+    }
+
     this.rl.question('Quel est le nombre entier ? ', (answer) => {
       console.log('Vous avez saisi ' + answer);
 
@@ -40,3 +44,5 @@ class Jeu {
     });
   }
 }
+
+module.exports = Jeu;

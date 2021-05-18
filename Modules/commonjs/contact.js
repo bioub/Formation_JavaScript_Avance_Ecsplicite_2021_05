@@ -1,4 +1,4 @@
-// (function (exports, require) {
+// (function (exports, require, module) {
   'use strict';
 
   class Contact {
