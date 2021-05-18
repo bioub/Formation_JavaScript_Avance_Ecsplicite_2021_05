@@ -12,7 +12,11 @@
         const btnEl = document.createElement('button');
         btnEl.innerText = contenu;
 
-        btnEl.addEventListener('click', () => {
+        btnEl.addEventListener('click', (event) => {
+          // historiquement this === btnEl
+          // avec les () => {} this n'existe pas
+          // alternative moderne :
+          // event.currentTarget
           console.log(contenu);
         });
 

@@ -43,5 +43,5 @@ const array1 = [1, 2, 3];
 const array2 = array1.slice(); // copy
 
 
-// Version moderne du clone objet (SPREAD Object ES2018)
+// Version moderne du shallow clone objet (SPREAD Object ES2018)
 const cloneObj = {...obj1};

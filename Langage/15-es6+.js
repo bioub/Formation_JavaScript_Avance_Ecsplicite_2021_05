@@ -49,7 +49,7 @@ console.log(letters); // [ 'B', 'C', 'D', 'E', 'F' ]
 // Object Destructuring
 const coords = { x: 1, y: 2 };
 
-//    {x: 1   , y: 2   }
+//       {x: 1   , y: 2   }
 // const {x: varX, y: varY} = coords;
 // console.log(varX, varY); // 1, 2
 
@@ -105,4 +105,4 @@ const {z, ...coords2d} = coords3d;
 console.log(coords2d.x); // 1
 console.log(coords2d.y); // 2
 
-// 
+//

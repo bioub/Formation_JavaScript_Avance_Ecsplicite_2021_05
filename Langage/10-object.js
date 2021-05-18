@@ -124,12 +124,13 @@ function Voiture(marque) {
 //   return 'Vrrroommmm';
 // };
 
+// si vous utilisez class :
 Object.defineProperty(Voiture.prototype, 'demarrer', {
   value: function () {
     return 'Vrrroommmm';
   },
-  // writable: false,
-  // configurable: false,
+  // writable: true,
+  // configurable: true,
   // enumerable: false, // pas dans les boucles, dans JSON.stringify...
 });
 
