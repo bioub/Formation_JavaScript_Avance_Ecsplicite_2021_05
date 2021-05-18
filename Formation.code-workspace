@@ -5,7 +5,12 @@
 		},
 		{
 			"path": "Async"
+		},
+		{
+			"path": "Modules"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Modules"
+	}
 }
