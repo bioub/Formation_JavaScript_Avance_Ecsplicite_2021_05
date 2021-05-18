@@ -4,4 +4,4 @@
   'use strict';
   const romain = new ecsplicite.Contact();
   romain.hello();
-}());
+})();

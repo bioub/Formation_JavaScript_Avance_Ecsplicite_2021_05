@@ -17,4 +17,4 @@
 
   globalThis.ecsplicite = globalThis.ecsplicite || {};
   globalThis.ecsplicite.Contact = Contact;
-}());
+})();

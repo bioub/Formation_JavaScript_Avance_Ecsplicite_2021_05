@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "chalk": "^4.1.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "prettier": "^2.3.0"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,mjs,html,json}\"",
+    "serve:dev": "live-server esm-browser-native"
+  }
+}
