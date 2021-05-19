@@ -8,9 +8,12 @@
 		},
 		{
 			"path": "Modules"
+		},
+		{
+			"path": "FrontEnd"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Modules"
+		"liveServer.settings.multiRootWorkspaceName": "FrontEnd"
 	}
 }
