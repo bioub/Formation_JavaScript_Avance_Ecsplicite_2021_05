@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "rxjs": "^6.6.7",
+    "rxjs-for-await": "^0.0.2"
+  }
+}
