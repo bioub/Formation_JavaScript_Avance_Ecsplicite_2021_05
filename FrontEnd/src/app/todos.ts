@@ -1,4 +1,8 @@
-export function createTodo(todo, containerEl) {
+interface Todo {
+  title: string;
+}
+
+export function createTodo(todo: Todo, containerEl: HTMLElement) {
   const divEl = document.createElement('div');
   divEl.className = 'todo-item';
 
